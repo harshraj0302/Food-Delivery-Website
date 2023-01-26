@@ -1,0 +1,207 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation bar: Logo and image */
+#logo {
+    margin: 0px -7px;
+}
+
+#logo img {
+
+    margin: 9px 27px;
+    height: 56px;
+}
+
+/* Navigation bar: LIst Stylling */
+#navbar {
+    position: relative;
+    opacity: 0.9;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 34px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 674px;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../fruits-bread-shopping-bag-wooden-background.jpg') no-repeat center center/cover;
+    height: 969px;
+    width: 1520px;
+    top: -174px;
+    z-index: -1;
+    /* opacity: 0.25; */
+}
+
+#home h1 {
+    position: relative;
+    bottom: 36px;
+    color: #594128;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Services Section  */
+
+/* .services-container::before{
+content:"";
+position: absolute;
+background: url('../chocolate brown background.png');
+background: #480b0b;
+height: 490px;
+width: 1519px;
+top: 780px;
+z-index: -1;
+} */
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+
+    border: 2px solid #6c2121;
+    margin: 21px 4px;
+    padding: 34px;
+    border-radius: 23px;
+    background-color: #522d2d66;
+}
+
+#services .box img {
+    height: 118px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#services .box h2 {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Clients Section  */
+
+
+/* Utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 3px;
+    margin: -35px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 7px 19px;
+    border: 2px solid white;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #480b0b;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Simple section  */
+.s-primary {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    justify-content: center;
+    font-size: 40px;
+    margin: 38px;
+}
+
+#blog p {
+    text-align: center;
+    margin: 9px;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn1 {
+    padding: 11px 20px;
+    border: 2px solid black;
+    /* color: white; */
+    margin: 48px 686px;
+    font-size: 24px;
+    border-radius: 3px;
+    /* background-color: #480b0b; */
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    display: block;
+}
+
+
+
